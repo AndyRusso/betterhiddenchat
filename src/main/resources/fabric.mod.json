@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "betterhiddenchat",
+	"version": "${version}",
+	"name": "Better hidden chat",
+	"description": "Hides the chat, whilst allowing to send messages and run commands.",
+	"authors": [
+		"Andy Russo"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/betterhiddenchat",
+		"sources": "https://github.com/andyrusso/betterhiddenchat",
+		"issues": "https://github.com/andyrusso/betterhiddenchat/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/betterhiddenchat/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"io.github.andyrusso.betterhiddenchat.BetterHiddenChat"
+		]
+	},
+	"mixins": [
+		"betterhiddenchat.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14",
+		"minecraft": ">=1.19",
+		"java": ">=17",
+		"fabric": ">=0.55.1"
+	}
+}
