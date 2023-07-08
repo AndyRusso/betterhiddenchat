@@ -13,8 +13,11 @@ public class BetterHiddenChatConfig {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static BetterHiddenChatConfig instance;
 
-    public boolean persist = false;
     public boolean chatHideState = false;
+    public boolean persistency = false;
+    public boolean notifyChatShow = true;
+    public boolean notifyAsOverlay = false;
+    public boolean showWhileTyping = false;
 
     public void save() {
         try {

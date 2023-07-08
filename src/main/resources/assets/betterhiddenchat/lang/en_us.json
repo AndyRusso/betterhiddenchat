@@ -1,6 +1,13 @@
 {
-  "betterhiddenchat.on": "Chat will be persistently hid.",
-  "betterhiddenchat.off": "Chat will not be persistently hid.",
+  "betterhiddenchat.persistency.on": "Chat will be persistently hid.",
+  "betterhiddenchat.persistency.off": "Chat will not be persistently hid.",
+  "betterhiddenchat.notifyChatShow.on": "You will be notified when the chat gets shown.",
+  "betterhiddenchat.notifyChatShow.off": "You will not be notified when the chat gets shown.",
+  "betterhiddenchat.notifyAsOverlay.on": "Your notification will be shown as an overlay.",
+  "betterhiddenchat.notifyAsOverlay.off": "Your notification will be shown as a chat message.",
+  "betterhiddenchat.showWhileTyping.on": "Chat will be shown while typing.",
+  "betterhiddenchat.showWhileTyping.off": "Chat will not be shown while typing.",
+  "betterhiddenchat.shown": "The chat is now shown.",
   "betterhiddenchat.category": "Better hidden chat",
   "betterhiddenchat.toggle": "Toggle hidden chat"
 }
