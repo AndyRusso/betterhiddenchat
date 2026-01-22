@@ -8,6 +8,6 @@
   "betterhiddenchat.showWhileTyping.on": "Chat will be shown while typing.",
   "betterhiddenchat.showWhileTyping.off": "Chat will not be shown while typing.",
   "betterhiddenchat.shown": "The chat is now shown.",
-  "betterhiddenchat.category": "Better hidden chat",
+  "key.category.betterhiddenchat.category": "Better hidden chat",
   "betterhiddenchat.toggle": "Toggle hidden chat"
 }

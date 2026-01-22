@@ -64,7 +64,7 @@ public class BetterHiddenChat implements ClientModInitializer {
 				new KeyBinding(
 						"betterhiddenchat.toggle",
 						InputUtil.UNKNOWN_KEY.getCode(),
-						"betterhiddenchat.category"
+						KeyBinding.Category.create(Identifier.of("betterhiddenchat:category"))
 				)
 		);
 
