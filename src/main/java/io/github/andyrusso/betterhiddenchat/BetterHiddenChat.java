@@ -10,9 +10,16 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.KeyBinding;
+import net.minecraft.client.resource.language.I18n;
 import net.minecraft.client.util.InputUtil;
+import net.minecraft.text.ClickEvent;
+import net.minecraft.text.MutableText;
+import net.minecraft.text.Style;
 import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
+import net.minecraft.util.Identifier;
 
+import java.net.URI;
 import java.util.function.Supplier;
 
 public class BetterHiddenChat implements ClientModInitializer {
@@ -57,6 +64,7 @@ public class BetterHiddenChat implements ClientModInitializer {
 												() -> config.showWhileTyping = !config.showWhileTyping
 										)
 								)
+								.then(help())
 				)
 		);
 
@@ -108,6 +116,62 @@ public class BetterHiddenChat implements ClientModInitializer {
 							return 0;
 						}
 				);
+	}
+
+	private LiteralArgumentBuilder<FabricClientCommandSource> help(
+	) {
+		return ClientCommandManager.literal("help")
+				.executes(
+						context -> {
+							context
+									.getSource()
+									.sendFeedback(
+											Text.literal(
+													Formatting.GOLD + Formatting.BOLD.toString()
+													+ I18n.translate("betterhiddenchat.help.1")
+													+ Formatting.RESET
+													+ I18n.translate("betterhiddenchat.help.2")
+											)
+											.append(Text.translatable("betterhiddenchat.help.3"))
+											.append(Text.translatable("betterhiddenchat.help.4"))
+											.append(Text.translatable("betterhiddenchat.help.5"))
+											.append(Text.translatable("betterhiddenchat.help.6"))
+											.append(Text.translatable("betterhiddenchat.help.7"))
+											.append(Text.translatable("betterhiddenchat.help.8"))
+											.append(Text.translatable("betterhiddenchat.help.9"))
+											.append(
+													translatableWithClickEvent(
+															"betterhiddenchat.help.10",
+															"https://modrinth.com/mod/betterhiddenchat"
+													)
+											)
+											.append(
+													translatableWithClickEvent(
+															"betterhiddenchat.help.11",
+															"https://boosty.to/AndyRusso"
+													)
+											)
+											.append(
+													translatableWithClickEvent(
+															"betterhiddenchat.help.12",
+															"https://modrinth.com/user/AndyRusso"
+													)
+											)
+									);
+
+							return 0;
+						}
+				);
+	}
+
+	private MutableText translatableWithClickEvent(String translationKey, String url) {
+		return Text.translatable(translationKey).fillStyle(
+				Style.EMPTY.withClickEvent(
+						new ClickEvent.OpenUrl(URI.create(
+								url)
+						)
+				)
+		);
 	}
 
 	public void toggleIsChatHidden() {

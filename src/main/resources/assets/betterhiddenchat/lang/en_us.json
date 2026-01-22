@@ -9,5 +9,17 @@
   "betterhiddenchat.showWhileTyping.off": "Chat will not be shown while typing.",
   "betterhiddenchat.shown": "The chat is now shown.",
   "key.category.betterhiddenchat.category": "Better hidden chat",
-  "betterhiddenchat.toggle": "Toggle hidden chat"
+  "betterhiddenchat.toggle": "Toggle hidden chat",
+  "betterhiddenchat.help.1": "Better hidden chat",
+  "betterhiddenchat.help.2": "\nHides the chat, whilst allowing to send messages and run commands.\n",
+  "betterhiddenchat.help.3": "\nHelp with configuration subcommands:\n",
+  "betterhiddenchat.help.4": "● §7§lnotifyAsOverlay§r - toggles the notification between a chat message and an overlay message. Overlay by default.\n",
+  "betterhiddenchat.help.5": "● §7§lnotifyChatShow§r - toggles whether to send a notification when the chat is shown. On by default.\n",
+  "betterhiddenchat.help.6": "● §7§lpersistency§r - keep the chat hidden the next time you open the game, if you had it hidden when you closed it. Off by default.\n",
+  "betterhiddenchat.help.7": "● §7§lshowWhileTyping§r - toggles whether to show the chat when typing if the chat is hidden. On by default.\n",
+  "betterhiddenchat.help.8": "\nIt's also possible to set a keybind through the default Minecraft controls menu to toggle chat visibility.\n",
+  "betterhiddenchat.help.9": "\nMade by §aAndy Russo§r:\n",
+  "betterhiddenchat.help.10": "§7⏷§r Updates: §9§nmodrinth.com/mod/betterhiddenchat§r\n",
+  "betterhiddenchat.help.11": "§a$§r Donations, other mods: §9§nboosty.to/andyrusso§r\n",
+  "betterhiddenchat.help.12": "§e⭐§r Modrinth: §9§nmodrinth.com/user/AndyRusso§r"
 }
