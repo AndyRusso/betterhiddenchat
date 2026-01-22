@@ -1,5 +1,5 @@
 # Changelog
-## [1.1.0](https://github.com/AndyRusso/betterhiddenchat/releases/tag/v1.1.0) - 08.07.2023
+## [1.1.0](https://github.com/AndyRusso/betterhiddenchat/releases/tag/v1.1.0) - 2023-07-08
 ### Changed
 - Renamed `togglePersistency` subcommand to `persistency`
 
