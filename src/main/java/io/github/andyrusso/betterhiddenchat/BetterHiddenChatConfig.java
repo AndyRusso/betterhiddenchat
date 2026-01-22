@@ -16,8 +16,8 @@ public class BetterHiddenChatConfig {
     public boolean chatHideState = false;
     public boolean persistency = false;
     public boolean notifyChatShow = true;
-    public boolean notifyAsOverlay = false;
-    public boolean showWhileTyping = false;
+    public boolean notifyAsOverlay = true;
+    public boolean showWhileTyping = true;
 
     public void save() {
         try {
